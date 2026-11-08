@@ -14,6 +14,7 @@ Reference: 1,175 customers; recency median 19, minimum 0, maximum 180; frequency
 import pandas as pd
 import numpy as np
 from pathlib import Path
+from sklearn.decomposition import PCA
 
 orders = pd.read_csv('data/clean/orders.csv')
 customers = pd.read_csv('data/clean/customers.csv')
